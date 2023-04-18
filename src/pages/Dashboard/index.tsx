@@ -53,6 +53,8 @@ const chartOptions = {
 
 const series = [{ name: 'series1', data: [31, 120, 10, 28, 51, 18, 109] }]
 
+const series2 = [{ name: 'series1', data: [12, 54, 78, 23, 115, 89, 36] }]
+
 export const Dashboard = () => {
   return (
     <Flex direction='column'>
@@ -61,7 +63,7 @@ export const Dashboard = () => {
       <Flex w='100%' maxW={1480} m='auto' my='6' px='6'>
         <Sidebar />
 
-        <SimpleGrid flex='1' gap='4' minChildWidth='320px' align='flex-start'>
+        <SimpleGrid flex='1' gap='4' align='flex-start'>
           <Box p={['6', '8']} bg='gray.800' borderRadius={8} pb='4'>
             <Text fontSize='lg' mb='4'>
               Incritos da semana
@@ -73,7 +75,7 @@ export const Dashboard = () => {
             <Text fontSize='lg' mb='4'>
               Taxa de abertura
             </Text>
-            <Chart options={chartOptions} series={series} type='area' height={160} />
+            <Chart options={chartOptions} series={series2} type='area' height={160} />
           </Box>
         </SimpleGrid>
       </Flex>

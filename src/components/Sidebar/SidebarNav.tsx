@@ -3,7 +3,8 @@ import {
   RiContactsLine,
   RiDashboardLine,
   RiGitMergeLine,
-  RiInputMethodLine
+  RiInputMethodLine,
+  RiSettings3Line
 } from 'react-icons/ri'
 
 import { NavLink } from './NavLink'
@@ -35,6 +36,14 @@ export function SidebarNav() {
         <NavLink
           linkTitle='Automação'
           linkIcon={RiGitMergeLine}
+          // linkURL='/'
+        />
+      </NavSection>
+
+      <NavSection title='CONFIGURAÇÕES'>
+        <NavLink
+          linkTitle='Configurações'
+          linkIcon={RiSettings3Line}
           // linkURL='/'
         />
       </NavSection>
